@@ -10,3 +10,11 @@ Exec=/yourpath/firefox -P "$(result=$(head -n 1 /yourpath/output.txt); [ -z "$re
 ```
 TODO
 - [ ] update the regex regarding to firefox path https://github.com/linhx/save-last-active-firefox-profile/blob/877f60e14dcd0109a627448b236760f32234bc77/main.c#L50C83-L50C83
+
+## Build
+
+```shell
+sudo apt-get install libx11-dev
+
+gcc -o main main.c -lX11
+```
